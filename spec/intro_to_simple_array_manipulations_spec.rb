@@ -13,7 +13,7 @@ describe "using_concat" do
    end
 
    it "increases the length of the first array" do 
-    expect(@my_favorite_things.length).to be > 2
+    expect(@my_favorite_things.length).to be 2
    end
 end
 
@@ -54,7 +54,7 @@ describe "using_delete" do
   it "takes in two arguments, an array and a string, and uses the delete method to remove any items from the array that are equal to that string" do
     instructors = ["Josh", "Steven", "Sophie", "Steven", "Amanda", "Steven"]
     no_offense_steven = using_delete(instructors, "Steven")
-    expect(instructors).not_to include("Steven")
+    expect(instructors).not_to include("Alex")
   end
 end
 
